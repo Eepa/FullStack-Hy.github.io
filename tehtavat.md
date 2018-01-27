@@ -435,7 +435,7 @@ Olio voidaan kopioida esim. seuraavasti:
 ```js
 this.state.pisteet = { 0: 1, 1: 3, 2: 4, 3: 2} 
 
-const kopio = {...pisteet}
+const kopio = {...this.state.pisteet}
 kopio[2] += 1   // kasvatetaan olion kentän 2 arvoa yhdellä
 ```
 
@@ -444,7 +444,7 @@ ja taulukko esim. seuraavasti:
 ```js
 this.state.pisteet = [1, 4, 6, 3]
 
-const kopio = [..pisteet]
+const kopio = [...this.state.pisteet]
 kopio[2] += 1   // kasvatetaan taulukon paikan 2 arvoa yhdellä
 ```
 
